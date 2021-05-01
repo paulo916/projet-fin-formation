@@ -48,69 +48,57 @@
                 </hgroup>
             </header>
 
-            <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
+            <form method="post" id="fContato" action="mailto:paulo_magalhaes@outlook.fr" oninput="calc_total();">
                 <fieldset id="usuario">
-                    <legend>Identificação do Usuário</legend>
-                    <p><label for="cNome"> Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></p>
-                    <p><label for="Csenha"> Senha:</label> <input type="password" name="Tsenha" id="Csenha" size="8" maxlength="8" placeholder="8 Digitos"></p>
+                    <legend>Identifiant utilisateur</legend>
+                    <p><label for="cNome"> Nom:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></p>
+                    <p><label for="Csenha"> Password:</label> <input type="password" name="Tsenha" id="Csenha" size="8" maxlength="8" placeholder="8 Digitos"></p>
                     <p><label for="CMail"> E-mail:</label> <input type="email" name="TMail" id="CMail" size="20" maxlength="40"></p>
-                    <fieldset id="sexo"><legend>Sexo:</legend>
-                        <input type="radio" name="Tsexo" id="Cmasc"> <label for="Cmasc">Masculino</label><br>
-                        <input type="radio" name="Tsexo" id="Cfem"> <label for="Cfem">Feminino</label>
+                    <fieldset id="sexo"><legend>Sexe:</legend>
+                        <input type="radio" name="Tsexo" id="Cmasc"> <label for="Cmasc">Masculin</label><br>
+                        <input type="radio" name="Tsexo" id="Cfem"> <label for="Cfem">Feminin</label>
                     </fieldset>
-                    <p><label for="cNasc"> Data de Nascimento:</label> <input type="date" name="TNasc" id="CNasc"></p>
+                    <p><label for="cNasc"> Date de Naissance:</label> <input type="date" name="TNasc" id="CNasc"></p>
                 </fieldset>
 
                 <fieldset id="endereco">
-                    <legend>Endereço do Usuário</legend>
-                    <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av,.."></p>
+                    <legend>Adresse utilisateur</legend>
+                    <p><label for="cRua">Adresse:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rue, Av,.."></p>
                     <p><label for="cNum"> Número: </label><input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
-                    <p><label for="cEst"> Estado:</label>
+                    <p><label for="cEst"> Département: </label>
                         <select name="tEst" id="cEst">
-                            <optgroup label="Regiao Sudeste">
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="SP" selected>Sao Paulo</option>
-                                <option value="MG">Minas gerais</option>
+                            <optgroup label="Côte Nort">
+                                <option value="PR">Ile-de-france</option>
+                                <option value="SP">Normandie</option>
+                                <option value="LI">Bretagne</option>
                             </optgroup>
-                            <optgroup label="Regiao Sul">
-                                <option value="PR">Parana</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="RS">Rio grande do sul</option>
+                            <optgroup label="Côte Sûr">
+                                <option value="MS">Côte d'Azur</option>
+                                <option value="BD">Occitanie</option>
+                                <option value="NC">Nouvelle-Aquitaine</option>
                             </optgroup>
                         </select></p>
-                    <p><label for="cCid"> Cidade:</label>
-                    <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></p>
+                    <p><label for="cCid"> Villes:</label>
+                    <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Votre Ville" list="cidades"></p>
                     <datalist id="cidades">
-                        <option value="Rio de Janeiro"></option>
-                        <option value="Nova Iguaçu"></option>
-                        <option value="Niteroi"></option>
-                        <option value="Belford Roxo"></option>
+                        <option value="Paris"></option>
+                        <option value="Lille"></option>
+                        <option value="Marseille"></option>
+                        <option value="Nice"></option>
                     </datalist>
                 </fieldset>
 
                 <fieldset id="mensagem">
-                    <legend>Mensagem do Usuário</legend>
-                    <p><label for="cUrg"> Grau de Urgência:</label>
+                    <legend>Message de l'utilisateur</legend>
+                    <p><label for="cUrg"> Grade de difficulté:</label>
                     Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Max</p>
-                    <p><label for="cMsg">>Mensagem:</label>
-                    <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
-                </fieldset>
-
-                <fieldset id="pedido">
-                    <legend>Quero um Google Glass</legend>
-                    <p><input type="checkbox" name="tPed" id="cPed" checked>
-                        <label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
-                    <p><label for="cCor"> Cor:</label>
-                    <input type="color" name="tCor" id="cCor" value="#0000FF"></p>
-                    <p><label for="cQtd"> Quantidade:</label>
-                    <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"></p>
-                    <p><label for="cTot"> Preço Total: R$</label>
-                    <input type="text" name="tTot"
-                    id="cTot" placeholder="Total a pagar" readonly></p>
+                    <p><label for="cMsg">Message:</label>
+                    <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Laisse ici votre message"></textarea></p>
                 </fieldset>
 
 
-                <input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
+
+                <input type="image" name="tEnviar" src="images/botao-enviar.png">
             </form>
 
     <footer id="rodape">
