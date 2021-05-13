@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
 <script language="JavaScript"src="javascript/function.js"></script>
+<script language="JavaScript"src="javascript/pop-up.js"></script>
 <body>
 <div id="interface">
     <header id="cabelhaco">
@@ -34,6 +35,20 @@
     <section id="corpo">
         <article id="noticia-principal">
             <header id="cabelhaco-artigo">
+                <form action="validate.php" method="post">
+                    <table>
+                    <tr>
+                        <td>
+                            <label>Entrer le texte dans l'image</label>
+                            <input name="captcha" type="text">
+                            <img src="captcha.php" style="vertical-align: middle;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input name="submit" type="submit" value="Submit"></td>
+                    </tr>
+                    </table>
+                    </form>
     <hgroup>
     <h3>Salarié > &nbsp;Entrepeneur</h3>
     <h2>Mon parcours</h2>

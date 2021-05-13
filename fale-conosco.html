@@ -47,8 +47,8 @@
                     <h3 class="direita">Actualisé le 14/Avril/2021</h3>
                 </hgroup>
             </header>
-
-            <form method="post" id="fContato" action="mailto:paulo_magalhaes@outlook.fr" oninput="calc_total();">
+            
+            <form action="email.php" method="post" id="fContato" oninput="calc_total();">
                 <fieldset id="usuario">
                     <legend>Identifiant utilisateur</legend>
                     <p><label for="cNome"> Nom:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"></p>
@@ -60,7 +60,8 @@
                     </fieldset>
                     <p><label for="cNasc"> Date de Naissance:</label> <input type="date" name="TNasc" id="CNasc"></p>
                 </fieldset>
-
+                
+                
                 <fieldset id="endereco">
                     <legend>Adresse utilisateur</legend>
                     <p><label for="cRua">Adresse:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rue, Av,.."></p>
