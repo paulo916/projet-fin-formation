@@ -38,8 +38,17 @@ header#cabelhaco img#icone{
 header#cabelhaco{
     border-bottom: 1px #606060 solid;
     height: 150px;
-    background: url("../images/dessin.png") no-repeat 0px 80px;
 }
+div#dessin{
+    margin: -20px auto 0px auto;
+    position: absolute;
+    top: 94px;
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+}
+    @-webkit-keyframes move_eye { from { margin-left:0%; } to { margin-left:20%; }  }
+    @keyframes move_eye { from { margin-left:0%; } to { margin-left:30%; }  }
+
 header#cabelhaco h1{
     font-family: 'titan',sans-serif;
     font-size: 25pt;
