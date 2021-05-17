@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <script language="JavaScript"src="javascript/function.js"></script>
+<script src="javascript/form.js"></script>
 <script>
     function calc_total(){
         var qtd =parseInt(document.getElementById('cQtd').value);
@@ -64,30 +65,38 @@
                 
                 
                 <fieldset id="endereco">
-                    <legend>Adresse utilisateur</legend>
-                    <p><label for="cRua">Adresse:</label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rue, Av,.."></p>
-                    <p><label for="cNum"> Número: </label><input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
-                    <p><label for="cEst"> Département: </label>
-                        <select name="tEst" id="cEst">
-                            <optgroup label="Côte Nort">
-                                <option value="PR">Ile-de-france</option>
-                                <option value="SP">Normandie</option>
-                                <option value="LI">Bretagne</option>
-                            </optgroup>
-                            <optgroup label="Côte Sûr">
-                                <option value="MS">Côte d'Azur</option>
-                                <option value="BD">Occitanie</option>
-                                <option value="NC">Nouvelle-Aquitaine</option>
-                            </optgroup>
-                        </select></p>
-                    <p><label for="cCid"> Villes:</label>
-                    <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Votre Ville" list="cidades"></p>
-                    <datalist id="cidades">
-                        <option value="Paris"></option>
-                        <option value="Lille"></option>
-                        <option value="Marseille"></option>
-                        <option value="Nice"></option>
-                    </datalist>
+                    <div class="container w-50">
+                        <fieldset class="p-2">
+                          <legend  class="w-auto">Inscription</legend>
+                        <h4 class=" text-center text-primary pb-2">Un formulaire de connexion en AJAX</h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-2">
+                                    <label for="Pays">Ville:</label>
+                                    <input type="text" class="form-control" id="ville" placeholder="Pays" required>
+                                </div>
+                                <div class="col-md-4 mb-2">
+                                    <label for="pays">Pays:</label>
+                                    <input type="text" class="form-control" id="pays" placeholder="Ville" required>
+                                </div>
+                                <div class=col-md-4 mb-2">
+                                    <label for="cp">Code postal:</label>
+                                    <input type="number" class="form-control" id="cp" placeholder="Code postal" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                  <br><input class="form-check-input" type="checkbox" value="" id="cgu" required>
+                                  <label class="form-check-label" for="cgu">J'accepte les conditions générales d'utilisation et de vente</label>
+                                  <div class="invalid-feedback">Vous devez accepter les CGU pour continuer</div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Envoyer</button>
+                        </form>
+                      </fieldset>
+                    </div>
                 </fieldset>
 
                 <fieldset id="mensagem">
