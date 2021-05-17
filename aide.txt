@@ -4,6 +4,6 @@ page form-contact
 
 Lesly LODIN
 * Afficher un popup pour prévenir l'internaute que ce site utilise des cookies ou enregistre des données personnelles
-* Metter en place un back-office qui permert de lister les personnes inscrites pour pouvoir les modifier ou surtout le supprimer ains que toutes les données les concernant en application de la loi RGPD
+* Metter en place un back-office qui permert de lister les personnes inscrites pour pouvoir les modifier ou surtout le supprimer, ainsi que toutes les données les concernant en application de la loi RGPD
 *faire captcha
 *faire canvas (machine déplace)

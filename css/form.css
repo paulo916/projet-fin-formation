@@ -1,37 +1,91 @@
-@charset "UTF-8";
+@charset "utf-8";
 form{
     width: 500px;
     margin: auto;
-}
-input, textarea{
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 13pt;
-    background-color: rgba(255,255,255,.8);
-}
-input:hover, textarea:hover {
+    font-family: 'Open Sans', sans-serif;
     background-color: #dddddd;
+    color: rgba(24, 98, 168, 0.685);
 }
-legend{
+div#interface{
+    width: 900px;
+    background-color: white;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+header#cabelhaco{
+    border-bottom: 1px #606060 solid;
+    height: 170px;
+}
+header#cabelhaco h1{
+    font-family: 'titan',sans-serif;
+    font-size: 25pt;
+    color: #257cdf solid;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 20px;
+    margin-bottom: -100px;
+}
+header#cabelhaco h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
     color: #888888;
-    font-weight: bold;
-    font-size: 13pt;
-    font-family: sans-serif;
+    padding: 0px;
+    margin-top: 15px;
 }
-fieldset{
-    border-color: #cecece;
-    margin: 20px;
+header#cabelhaco img#icone{
+    position: absolute;
+    left: 1230px;
+    top: 50px;
 }
-fieldset#sexo{
-    width: 150px;
+div#dessin{
+    margin: -20px auto 0px auto;
+    position: absolute;
+    top: 102px;
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+    animation: 4s linear 0s infinite alternate move_eye;
+}
+    @-webkit-keyframes move_eye { from { margin-left:0%; } to { margin-left:20%; }  }
+    @keyframes move_eye { from { margin-left:0%; } to { margin-left:30%; }  }
+nav#menu{
+    display: block;
+}
+nav#menu ul
+{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -2px;
+    left: 750px;
+
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
 }
 
-fieldset#usuario{
-    background: url("../images/icone-contato.png") no-repeat 95% 95%;
+nav#menu li:hover{
+    background-color: #606060;
 }
-fieldset#endereco{
-    background: url("../images/icone-endereco.png")no-repeat 95% 95%;
+
+
+nav#menu h1{
+    display: none;
 }
-fieldset#mensagem{
-    background: url("../images/icone-mensagem.png")no-repeat 95% 95%;
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+ }
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
 }
