@@ -89,3 +89,6 @@ section#corpo{
     border-right: 1px solid #606060;
     padding-right: 15px;
 }
+div#conf{
+    text-align: center;
+}
