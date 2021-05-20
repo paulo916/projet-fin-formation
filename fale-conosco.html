@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
-<script language="JavaScript"src="javascript/function.js"></script>
-<script src="javascript/form.js"></script>
+<script src="javascript/function.js"></script>
+<script src="javascript/index.js"></script>
 <script>
     function calc_total(){
         var qtd =parseInt(document.getElementById('cQtd').value);
@@ -47,7 +47,7 @@
                     <h3>Parlez avec moi > Contact</h3>
                     <h2>Formulaire de Contact</h2>
                     <h4>par Paulo Magalhaes</h4>
-                    <h3 class="direita">Actualisé le 14/Avril/2021</h3>
+                    <h3 class="direita">Actualisé le <span id="aujor"></span>
                 </hgroup>
             </header>
             <div class="container w-50">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="col-md-4 mb-2">
                             <label for="pseudo">Adress Mail</label>
-                            <input type="email" class="form-control" id="pseudo" placeholder="xxx_xxx@outlook.fr" required>
+                            <input type="email" class="form-control" id="pseudo" placeholder="" required>
                             <div class="valid-feedback">Ok !</div>
                             <div class="invalid-feedback">Valeur incorrecte</div>
                         </div>
@@ -88,7 +88,7 @@
                             <div class="valid-feedback">Ok !</div>
                             <div class="invalid-feedback">Valeur incorrecte</div>
                         </div>
-                        <div class=col-md-4 mb-2">
+                        <div class="col-md-4 mb-2">
                             <label for="cp">Code postal</label>
                             <input type="number" class="form-control" id="cp" placeholder="Code postal" required>
                             <div class="valid-feedback">Ok !</div>
@@ -107,7 +107,7 @@
               </fieldset>
             </div>
             <div id="conf">
-                <a href="mentions.html">Mentions légales et de confidenlité</a>
+                <a href="mentions.html" target="_blank">Mentions légales et de confidenlité</a>
                 </div>
     <footer id="rodape">
 
@@ -116,7 +116,7 @@
             <a href="http://twitter.com" target="_blank">Twitter</a>
         </p>
     </footer>
-    
 </div>
+<script src="javascript/form.js"></script>
 </body>
 </html>
