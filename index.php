@@ -1,3 +1,15 @@
+<?php
+// Test si connecté
+session_start();
+$is_in = false;
+if (isset($_SESSION['connected']) && $_SESSION['connected'] === true) {
+    $is_in = true;
+}
+
+// Imports
+include_once('inc/constants.inc.php');
+include_once('inc/dbconnect.inc.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -26,14 +38,15 @@
 
         <h1>Menu Principal</h1>
             <ul>
-                <li onmouseover="mudaFoto('images/home.png')"onmouseout="mudaFoto('images/machine.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('images/home.png')"onmouseout="mudaFoto('images/machine.png')"><a href="index.php">Home</a></li>
                 <li onmouseover="mudaFoto('images/especificacoes.png')"onmouseout="mudaFoto('images/machine.png')"><a href="specs.html">Caractéristiques</a></li>
                 <li onmouseover="mudaFoto('images/fotos.png')"onmouseout="mudaFoto('images/machine.png')"><a href="fotos.html">Photos</a></li>
                 <li onmouseover="mudaFoto('images/multimidia.png')"onmouseout="mudaFoto('images/machine.png')"><a href="multimidia.html">Vidéos</a></li>
-                <li onmouseover="mudaFoto('images/contato.png')"onmouseout="mudaFoto('images/machine.png')"><a href="fale-conosco.html">Contactez moi</a></li>
+                <!--<li onmouseover="mudaFoto('images/contato.png')"onmouseout="mudaFoto('images/machine.png')"><a href="fale-conosco.html">Contactez moi</a></li>-->
             </ul>
         </nav>
     </header>
+    
     <section id="corpo">
         <article id="noticia-principal">
             <header id="cabelhaco-artigo">
@@ -41,7 +54,7 @@
                     <table>
                     <tr>
                         <td>
-                            <label>Entrer le texte dans l'image</label>
+                            <label>Entrer les nùmeros dans la case</label>
                             <input name="captcha" type="text">
                             <img src="captcha.php" style="vertical-align: middle;"/>
                         </td>
@@ -114,9 +127,14 @@
         </table>
 
     <p>Pour le moment j'ai utilisé (et surtout maitrisé) ses machines. Je veux continuer à apprende des nouvelles machines et avoir des nouvelles éxperiences, pour continuer a avoir plus des atouts.</p>
-    </aside>
-    <footer id="rodape">
 
+    <a href="incrip.php"><button class="yellow" type="button">Déconnexion</button></a>
+    </aside>
+    
+    <footer id="rodape">
+            <div id="conf">
+                <a href="mentions.html" target="_blank">Mentions légales et de confidenlité</a>
+            </div>
         <p>Copyright &copy;2021 - by Paulo Magalhaes<br>
             <a href="http://facebook.com" target="_blank">Facebook</a> |
             <a href="http://twitter.com" target="_blank">Twitter</a>

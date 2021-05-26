@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/connection.css">
 </head>
 <script src="javascript/function.js"></script>
 <script src="javascript/index.js"></script>
@@ -35,7 +35,8 @@
                 <li onmouseover="mudaFoto('images/especificacoes.png')"onmouseout="mudaFoto('images/machine.png')"><a href="specs.html">Caractéristiques</a></li>
                 <li onmouseover="mudaFoto('images/fotos.png')"onmouseout="mudaFoto('images/machine.png')"><a href="fotos.html">Photos</a></li>
                 <li onmouseover="mudaFoto('images/multimidia.png')"onmouseout="mudaFoto('images/machine.png')"><a href="multimidia.html">Vidéos</a></li>-->
-                <li onmouseover="mudaFoto('images/contato.png')"onmouseout="mudaFoto('images/machine.png')"><a href="">Inscription</a></li>
+                <!--<li onmouseover="mudaFoto('images/contato.png')"onmouseout="mudaFoto('images/machine.png')"><a href="fale-conosco.html">Contactez moi</a></li>-->
+                <li onmouseover="mudaFoto('images/contato.png')"onmouseout="mudaFoto('images/machine.png')"><a href="connection.html">Connécte toi</a></li>
             </ul>
             </nav>
         </header>
@@ -44,7 +45,7 @@
         <article id="noticia-principal">
             <header id="cabelhaco-artigo">
                 <hgroup>
-                    <h3>Me connâitre > Inscription</h3>
+                    <h3>Connexion > Accueil</h3>
                     <h2>Formulaire de Contact</h2>
                     <h4>par Paulo Magalhaes</h4>
                     <h3 class="direita">Actualisé le <span id="aujor"></span>
@@ -52,10 +53,16 @@
             </header>
             <div class="container w-50">
                 <fieldset class="p-2">
-                  <legend  class="w-auto">Inscription</legend>
+                  <legend  class="w-auto">connexion</legend>
                 <h4 class=" text-center text-primary pb-2">Un formulaire de connexion en AJAX</h4>
                 <form class="needs-validation" action="index.php" novalidate>
                     <div class="form-row">
+                        <div class="col-md-4 mb-2">
+                            <label for="pseudo">Adresse Mail</label>
+                            <input type="email" class="form-control" id="pseudo" placeholder="" required>
+                            <div class="valid-feedback">Ok !</div>
+                            <div class="invalid-feedback">Valeur incorrecte</div>
+                        </div>
                         <div class="col-md-4 mb-2">
                             <label for="prenom">Prénom</label>
                             <input type="text" class="form-control" id="prenom" placeholder="prenom" required>
@@ -63,34 +70,8 @@
                             <div class="invalid-feedback">Valeur incorrecte</div>
                         </div>
                         <div class="col-md-4 mb-2">
-                            <label for="nom">Nom de famille</label>
-                            <input type="text" class="form-control" id="nom" placeholder="nom" required>
-                            <div class="valid-feedback">Ok !</div>
-                            <div class="invalid-feedback">Valeur incorrecte</div>
-                        </div>
-                        <div class="col-md-4 mb-2">
-                            <label for="pseudo">Adress Mail</label>
-                            <input type="email" class="form-control" id="pseudo" placeholder="" required>
-                            <div class="valid-feedback">Ok !</div>
-                            <div class="invalid-feedback">Valeur incorrecte</div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-md-4 mb-2">
-                            <label for="Pays">Ville</label>
-                            <input type="text" class="form-control" id="ville" placeholder="Pays" required>
-                            <div class="valid-feedback">Ok !</div>
-                            <div class="invalid-feedback">Valeur incorrecte</div>
-                        </div>
-                        <div class="col-md-4 mb-2">
-                            <label for="pays">Pays</label>
-                            <input type="text" class="form-control" id="pays" placeholder="Ville" required>
-                            <div class="valid-feedback">Ok !</div>
-                            <div class="invalid-feedback">Valeur incorrecte</div>
-                        </div>
-                        <div class="col-md-4 mb-2">
-                            <label for="cp">Code postal</label>
-                            <input type="number" class="form-control" id="cp" placeholder="Code postal" required>
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="password" required>
                             <div class="valid-feedback">Ok !</div>
                             <div class="invalid-feedback">Valeur incorrecte</div>
                         </div>
@@ -108,7 +89,7 @@
             </div>
             <div id="conf">
                 <a href="mentions.html" target="_blank">Mentions légales et de confidenlité</a>
-                </div>
+            </div>
     <footer id="rodape">
 
         <p>Copyright &copy;2021 - by Paulo Magalhaes<br>

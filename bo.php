@@ -23,7 +23,7 @@ $db = new Database('MY', HOST, PORT, DATA, USER, PASS);
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="index.php">Accueil</a></li>
             <li class="breadcrumb-item active" aria-current="page">Back-office</li>
         </ol>
     </nav>
