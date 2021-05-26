@@ -3,7 +3,7 @@ document.querySelector('#dbs').addEventListener(
     'change',
     function (evt) {
         let oXhr = new XMLHttpRequest();
-        oXhr.open('get', 'bo.ajax.php?db=' + evt.target.value, true);
+        oXhr.open('get', 'bo.php?db=' + evt.target.value, true);
         oXhr.addEventListener(
             'readystatechange',
             function () {
