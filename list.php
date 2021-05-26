@@ -54,7 +54,6 @@ $db = new Database('MY', HOST, PORT, DATA, USER, PASS);
         ?>
     </section>
 </div>
-    <script src="js/hotels.js"></script>
 </body>
 
 </html>

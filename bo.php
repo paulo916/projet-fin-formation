@@ -60,7 +60,7 @@ $db = new Database('MY', HOST, PORT, DATA, USER, PASS);
     <section id="databases">
         <?php
         // Afficher la liste des BDD du serveur
-        echo $db->makeSelect('dbs', 'SHOW DATABASES');
+        //echo $db->makeSelect('dbs', 'SHOW DATABASES');
         ?>
     </section>
 
