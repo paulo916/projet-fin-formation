@@ -1,0 +1,34 @@
+body{
+    min-height: 100%;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    height: 100%;
+    left: 410px;
+}
+.container{
+    background-image: url('../images/sany.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+div#conf a{
+    color: #257cdf;
+    text-align: center;
+    bottom: 80px;
+    position: fixed;
+    width: 1000px;
+}
+
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+    position: absolute;
+    bottom: 0;
+    width: 1000px;
+}
+
+footer#rodape p{
+    text-align: center;
+}
